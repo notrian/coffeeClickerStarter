@@ -3,6 +3,9 @@
 }
 body {
   margin: 0px;
+  color: #cecece;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121216;
 }
 .column-container {
   display: flex;
@@ -35,16 +38,19 @@ body {
 .column-header {
   font-size: 25px;
   position: relative;
-  background-color: white;
+  background-color: #121216;
+  color: white;
   top: 8px;
 }
 #big_coffee {
   user-select: none;
   font-size: 128px;
   cursor: pointer;
+  transition: all 0.1s ease;
 }
 
 .counter-container {
+  color: white;
   font-size: 30px;
   margin: 10px;
 }
@@ -53,10 +59,17 @@ body {
   font-size: 20px;
 }
 
+#coffee_counter {
+  background-color: #202020;
+  box-shadow: 0px 0px 15px 0px black;
+  padding: 4px 12px 4px 12px;
+  border-radius: 5px;
+}
+
 #producer_container {
   padding: 10px;
   overflow: auto;
-  border: 2px black solid;
+  border: 2px #ffffff50 solid;
   border-radius: 5px;
 }
 
@@ -76,9 +89,31 @@ body {
 
 .producer-title {
   font-size: 20px;
+  color: white;
 }
 
-.producer button {
+button {
+  cursor: pointer;
+  color: #cecece;
+  font-weight: 500;
   font-size: 15px;
-  width: 50px;
+  padding: 4px;
+  width: 100px;
+  background: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+}
+button:hover {
+  color: white;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px black;
+  transform: translateY(-5px);
+}
+
+.jumpUp {
+  transform: translateY(-5px);
+  transition: all 0.2s ease;
 }
